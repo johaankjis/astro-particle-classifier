@@ -110,7 +110,23 @@ pip install numpy pandas matplotlib scikit-learn imbalanced-learn tensorflow
 
 ## Usage
 
-### Running the Notebook
+### Option 1: Running the Example Script
+
+The easiest way to get started is to run the example script:
+
+```bash
+python example_usage.py
+```
+
+This script demonstrates:
+- Loading the MAGIC dataset
+- Preprocessing and feature scaling
+- Training a KNN classifier
+- Evaluating model performance
+
+### Option 2: Running the Jupyter Notebook
+
+For detailed analysis and comparison of multiple models:
 
 1. Launch Jupyter Notebook:
 ```bash
@@ -122,8 +138,9 @@ jupyter notebook
 3. Run all cells sequentially to:
    - Load and preprocess the data
    - Visualize feature distributions
-   - Train multiple models
+   - Train multiple models (KNN, Naive Bayes, Logistic Regression, SVM, Neural Network)
    - Compare model performances
+   - Perform hyperparameter tuning for neural networks
 
 ### Quick Start Example
 
@@ -156,9 +173,15 @@ predictions = knn_model.predict(X_test)
 
 ```
 astro-particle-classifier/
-├── README.md                                  # Project documentation
-├── Ray_Predecition_Model_for_a_telescope.ipynb  # Main Jupyter notebook
-└── magic04.data                               # MAGIC Gamma Telescope dataset
+├── README.md                                      # Project documentation
+├── CONTRIBUTING.md                                # Contribution guidelines
+├── LICENSE                                        # MIT License
+├── CHANGELOG.md                                   # Project history
+├── requirements.txt                               # Python dependencies
+├── .gitignore                                     # Git ignore patterns
+├── example_usage.py                               # Example script for quick start
+├── Ray_Predecition_Model_for_a_telescope.ipynb   # Main Jupyter notebook
+└── magic04.data                                   # MAGIC Gamma Telescope dataset
 ```
 
 ## Results
